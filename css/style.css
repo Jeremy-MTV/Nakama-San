@@ -1,0 +1,334 @@
+  header {
+      overflow: hidden;
+      background-color: white;
+      padding: 20px 10px;   
+  }
+
+  .right {
+      color: rgb(196, 201, 135);
+      float: right;
+  }
+  .right a.active {
+      background-color: rgb(160, 160, 60);
+      color: rgb(196, 201, 135);
+  }
+
+  *{
+      margin: 0;
+  }
+
+
+  header a {
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 25px;
+      border-radius: 4px;
+  }
+  header .header-message a.logo {
+      font-size: 15px;
+      font-weight: bold;
+  }
+  header .header-message a:hover {
+      background-color: rgb(221, 221, 36);
+      color: rgb(190, 190, 49);
+  }
+
+
+  @media screen and (max-width: 500px) {
+      .header a {
+          float: none;
+          display: block;
+          text-align: left;
+      }
+      .header-right {
+          float: none;
+      }
+  }
+  .container {
+      display: inline-block;
+      cursor: pointer;
+      margin: 2%;
+  }
+
+
+  /* Bouton de connexion/Inscription  version 2*/
+
+
+
+  /*Géometrie du Corps du site */
+
+  .corps { 
+      /* grid-area:  / 1 / 8 / 6;
+      border-bottom: 2px solid black; 
+      border-top: 2px solid black; 
+      border-right: 2px solid black; 
+      border-left: 2px solid black; */
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      overflow : hidden;
+  }
+
+  .corps video{
+      position: absolute;
+      min-width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -100;    
+  }
+
+  .corps::before{
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    background-color: rgba(255, 255, 255, 0.219);
+  }
+
+  .corps h1.active{
+  /* z-index: -1; */
+  /* position : relative;  */
+  width : 40%;
+  height: 50%;
+  background-color: rgb(184, 184, 66);
+  color: rgb(255, 255, 255);   
+  animation: mymove 1s infinite;
+  border-radius: 50px;
+  font-size: auto;
+  }
+
+
+  /* Connexion et Inscription version 1 */
+
+  /* 
+  .inscription{
+    margin: 30px;
+  }
+
+  .connexion{
+    padding: 10px;
+    border: solid;
+    border-color: rgb(186, 189, 29);
+  } */ 
+
+
+
+  /* Barre de recherche et animation bloc */
+
+  .hero {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+    .hero h1 {
+      font-weight: 800;
+      font-size: 4em;
+      margin-bottom: 80px;
+    }
+    .hero form {
+      position: relative;
+      z-index: 600;
+    }
+    .hero form .input {
+      display: flex;
+      height: 120px;
+      width: 110%;
+      box-shadow: 0 30px 50px rgba(255, 255, 255, 0.753)
+    }
+    .hero form .input input {
+      width: calc(100% - 120px);
+      border: none;
+      padding: 0 32px;
+      font-family: "Roboto Mono", monospace;
+      font-size: 1.2em;
+      font-weight: 600;
+      outline: none;
+    }
+    .hero form .input button {
+      width: 120px;
+      height: 120px;
+      background: #8DBE77;
+      border: none;
+      font-family: "Roboto Mono", monospace;
+      font-size: 2em;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-weight: 800;
+      position: relative;
+      transition: 0.4s;
+    }
+    .hero form .input button span {
+      position: relative;
+      z-index: 2;
+    }
+    .hero form .input button::after {
+      content: "";
+      width: 100%;
+      height: 0;
+      background: rgb(216, 230, 24);
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      transition: 0.4s;
+    }
+    .hero form .input button:hover {
+      color: #fff;
+    }
+    .hero form .input button:hover::after {
+      height: 100%;
+    }
+    .hero .left {
+      flex: 3;
+    }
+    .hero .right{
+      display: flex;
+      height: 80%;
+      gap: 24px;
+      flex: 7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero .right section {
+      flex: 1;
+      border-radius: 20px;
+      height: 100%;
+      background: red;
+      transition: 0.4s;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      padding: 32px;
+      justify-content: space-between;
+      position: relative;
+    }
+    .hero .right section::before {
+      content: "";
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      border-radius: 20px;
+      background: black;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.8521597859) 0%, rgba(0, 0, 0, 0) 100%);
+      bottom: 0;
+      left: 0;
+    }
+    .hero .right section .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 5;
+    }
+    .hero .right section .content::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: #1C1B29;
+      left: -32px;
+      transition: 0.4s;
+    }
+    .hero .right section h2 {
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      color: #fff;
+      transform: rotate(-90deg) translateY(-25px) translateX(25px);
+      transition: 0.4s;
+    }
+    .hero .right section h2 span {
+      opacity: 0;
+      transition: 0.4s;
+    }
+    .hero .right section h3 {
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      color: #fff;
+      text-align: center;
+      line-height: 1.3;
+      opacity: 0;
+      transition: 0.4s;
+    }
+    .hero .right section h3 span {
+      font-size: 0.4em;
+      text-transform: uppercase;
+    }
+
+    .hero .right {
+      flex: auto;
+    }
+    .hero .right section.box1 {
+      flex: 3 !important;
+      background-image: url("../image/anime.jpeg");
+    }
+    .hero .right section.box1 .content::before {
+      opacity: 0;
+    }
+    .hero .right section.box1 h2  {
+      transform: rotate(0) translateY(0) translateX(0);
+    }
+    .hero .right section.box1 h2 span  {
+      opacity: 1;
+    }
+    .hero .right section.box1 h3  {
+      opacity: 1;
+    }
+    .hero .right section.box2  {
+      background-image: url("../image/manga.png");
+    }
+    .hero .right section.box3  {
+      background-image: url("../image/avis.jpg");
+    }
+    .hero .right:hover section  {
+      flex: 1;
+    }
+    .hero .right:hover section .content::before  {
+      opacity: 1;
+    }
+    .hero .right:hover section h2  {
+      transform: rotate(-90deg) translateY(-25px) translateX(25px);
+    }
+    .hero .right:hover section h2 span  {
+      opacity: 0;
+    }
+    .hero .right:hover section h3  {
+      opacity: 0;
+    }
+    .hero .right:hover section:hover {
+      flex: 3;
+    }
+    .hero .right:hover section:hover .content::before  {
+      opacity: 0;
+    }
+    .hero .right:hover section:hover h2  {
+      transform: rotate(0) translateY(0);
+    }
+    .hero .right:hover section:hover h2 span  {
+      opacity: 1;
+    }
+    .hero .right:hover section:hover h3  {
+      opacity: 1;
+    }
+
+    .hack{
+      position: absolute;
+      width: 100%;
+      height:100%;
+      top:0;
+      left:0;
+      z-index:1;
+    }
+
+
+
+  /* Possibilité de mettre des listes de lecture pour voir à quelle episode/manga on est */

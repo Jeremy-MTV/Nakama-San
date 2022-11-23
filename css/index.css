@@ -1,0 +1,64 @@
+
+.formulaire{
+  margin: 6px 0;
+  cursor: pointer;
+  position: absolute;
+    top: 5%;
+    right: 0px;
+
+}
+    input[type=button] {
+      /* background-color: #e4f12a;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer; */
+      background-color: rgb(132, 126, 126);
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        color: rgb(225, 228, 49);
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 2em 6em;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    input[type=button], input[type=button]:after{
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    input[type=button]::before, input[type=button]::after{
+      background: rgb(235, 53, 53);
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+
+    input[type=button]:hover{
+      color: white;
+      background-color: #a2e946
+    }
+
+    input[type=button]::after{
+      height: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    input[type=button]:hover:after{
+      height: 100%;
+    }
+
+    .droite{
+      float:left;
+      padding : 1%;
+    }
+      

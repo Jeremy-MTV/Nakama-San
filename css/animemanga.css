@@ -1,0 +1,203 @@
+
+
+.formulaire{
+  margin: 6px 0;
+  cursor: pointer;
+  position: absolute;
+    top: 5%;
+    right: 0px;
+
+}
+    input[type=button] {
+      background-color: rgb(132, 126, 126);
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        color: rgb(225, 228, 49);
+        display: inline-flexbox;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 2em 6em;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    input[type=button], input[type=button]:after{
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    input[type=button]::before, input[type=button]::after{
+      background: rgb(235, 53, 53);
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+
+    input[type=button]:hover{
+      color: rgb(255, 255, 255);
+      background-color: #a2e946
+    }
+
+    input[type=button]::after{
+      height: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    input[type=button]:hover:after{
+      height: 100%;
+    }
+
+    .heros {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: relative  ;
+    top: 5%;
+    left: 82.5%;
+    transform: translate(-50%,-50%);
+  }
+  .heros h1 {
+    font-weight: 800;
+    font-size: 4em;
+    margin-bottom: 80px;
+  }
+  .heros form {
+    position: relative;
+    z-index: 600;
+  }
+  .heros form .input {
+    display: flex;
+    height: 120px;
+    width: 110%;
+    box-shadow: 0 30px 50px rgba(255, 255, 255, 0.753)
+  }
+  .heros form .input input {
+    width: calc(100% - 120px);
+    border: none;
+    padding: 0 32px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.2em;
+    font-weight: 600;
+    outline: none;
+  }
+  .heros form .input button {
+    width: 120px;
+    height: 120px;
+    background: #8DBE77;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    font-size: 2em;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-weight: 800;
+    position: relative;
+    transition: 0.4s;
+  }
+  .heros form .input button span {
+    position: relative;
+    z-index: 2;
+  }
+  .heros form .input button::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    background: rgb(216, 230, 24);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.4s;
+  }
+  .heros form .input button:hover {
+    color: #fff;
+  }
+  .heros form .input button:hover::after {
+    height: 100%;
+  }
+  .heros .left {
+    flex: 3;
+  }
+
+
+.corps h1.active{
+width : 40%;
+height: 50%;
+background-color: rgb(184, 184, 66);
+color: rgb(255, 255, 255);   
+animation: mymove 1s infinite;
+border-radius: 50px;
+font-size: 170%;
+display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.corps h1.ac{
+  font-size: 170%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active{
+width : 20%;
+height: 50%;
+background-color: rgb(184, 184, 66);
+color: rgb(255, 255, 255);   
+animation: mymove 1s infinite;
+border-radius: 50px;
+font-size: auto;
+display: inline-block !important;
+vertical-align: middle;
+float: none;
+margin:30px;
+}
+
+.droite{
+  float:left;
+  padding : 1%;
+}
+
+.active .supp .nommer .ajouterA .ajouterM .Signaler{
+  display: inline-block !important;
+  vertical-align: middle;
+  float:none;
+}
+
+.colorbox{
+  overflow-x:hidden;
+  background: linear-gradient(-135deg, #e4d25d, #7ece6c) !important;
+
+}
+.active2{
+  width : 50%;
+height: 50%;
+background-color: rgb(184, 184, 66);
+color: rgb(255, 255, 255);   
+animation: mymove 1s infinite;
+border-radius: 50px;
+display: inline-block; 
+font-size: auto;
+vertical-align: middle;
+float: none;
+margin:120px;
+}
+.aligné{
+  display: inline-block;
+
+}
+
+.aligné2{
+  display: inline;
+}
+

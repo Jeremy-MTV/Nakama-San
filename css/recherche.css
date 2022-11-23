@@ -1,0 +1,207 @@
+/* Fichier CSS pour la recherche */
+
+.formulaire{
+  margin: 6px 0;
+  cursor: pointer;
+  position: absolute;
+    top: 5%;
+    right: 0px;
+
+}
+    input[type=button] {
+      /* background-color: #e4f12a;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer; */
+      background: none;
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        color: rgb(225, 228, 49);
+        display: inline-flexbox;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 2em 6em;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    input[type=button], input[type=button]:after{
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    input[type=button]::before, input[type=button]::after{
+      background: rgb(235, 53, 53);
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+
+    input[type=button]:hover{
+      color: white;
+      background-color: #a2e946
+    }
+
+    input[type=button]::after{
+      height: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    input[type=button]:hover:after{
+      height: 100%;
+    }
+
+    .heros {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: relative  ;
+    top: 5%;
+    left: 82.5%;
+    transform: translate(-50%,-50%);
+  }
+  .heros h1 {
+    font-weight: 800;
+    font-size: 4em;
+    margin-bottom: 80px;
+  }
+  .heros form {
+    position: relative;
+    z-index: 600;
+  }
+  .heros form .input {
+    display: flex;
+    height: 120px;
+    width: 110%;
+    box-shadow: 0 30px 50px rgba(255, 255, 255, 0.753)
+  }
+  .heros form .input input {
+    width: calc(100% - 120px);
+    border: none;
+    padding: 0 32px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.2em;
+    font-weight: 600;
+    outline: none;
+  }
+  .heros form .input button {
+    width: 120px;
+    height: 120px;
+    background: #8DBE77;
+    border: none;
+    font-family: "Roboto Mono", monospace;
+    font-size: 2em;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-weight: 800;
+    position: relative;
+    transition: 0.4s;
+  }
+  .heros form .input button span {
+    position: relative;
+    z-index: 2;
+  }
+  .heros form .input button::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    background: rgb(216, 230, 24);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.4s;
+  }
+  .heros form .input button:hover {
+    color: #fff;
+  }
+  .heros form .input button:hover::after {
+    height: 100%;
+  }
+  .heros .left {
+    flex: 3;
+  }
+
+
+
+
+  
+/* .start-2 {
+  background-color: yellow;
+  width: 120px;
+  height: 120px;
+}
+
+.end-5 {
+  background-color: yellow;
+  width: 120px;
+  height: 120px;
+} */
+
+
+.events {
+  margin:10px;
+  background-color: yellow;
+  width: 50%;
+  height: 10%;
+  bottom: 3px;
+  border-radius: 50px;
+  position: relative;
+  display: block;  
+}
+
+.title{
+  margin:auto;
+}
+
+.time{
+  font-size: auto;
+}
+
+
+:root {
+  color-scheme: light dark;
+  --numDays: 5;
+  --numHours: 10;
+  --timeHeight: 60px;
+  --calBgColor: #fff1f8;
+  --eventBorderColor: #f2d3d8;
+  --eventColor1: #ffd6d1;
+  --eventColor2: #fafaa3;
+  --eventColor3: #e2f8ff;
+  --eventColor4: #d1ffe6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --calBgColor: #723352;
+    --eventBorderColor: #512e33;
+    --eventColor1: #965a53;
+    --eventColor2: #65651b;
+    --eventColor3: #456b77;
+    --eventColor4: #28533c;
+  }
+}
+
+.droite{
+      float:left;
+      padding : 1%;
+    }
+
+
+
+.supp{
+  display: inline-block;
+ vertical-align: middle;
+  float:none;
+  
+}
